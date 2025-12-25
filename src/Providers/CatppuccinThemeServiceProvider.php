@@ -16,7 +16,7 @@ class CatppuccinThemeServiceProvider extends ServiceProvider
     {
         $this->mergeConfigFrom(
             __DIR__ . '/../../config/catppuccin-theme.php',
-            'catppuccin-theme'
+            'Catppuccin-Theme'
         );
     }
 }

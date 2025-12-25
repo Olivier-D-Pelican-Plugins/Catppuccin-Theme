@@ -21,7 +21,7 @@ trait HasCatppuccinThemeCustomization
                         ->default(function () {
                             $user = auth()->user();
                             return CatppuccinThemePlugin::getUserPreference($user->id) 
-                                ?? config('catppuccin-theme.flavor', 'mocha');
+                                ?? config('Catppuccin-Theme.flavor', 'mocha');
                         })
                         ->live()
                         ->afterStateUpdated(function ($state) {

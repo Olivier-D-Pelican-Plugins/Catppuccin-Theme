@@ -16,7 +16,7 @@ class CatppuccinThemePlugin implements HasPluginSettings, Plugin
 
     public function getId(): string
     {
-        return 'catppuccin-theme';
+        return 'Catppuccin-Theme';
     }
 
     public const CATPPUCCIN_ROSEWATER = [
@@ -539,7 +539,7 @@ public const CATPPUCCIN_MACCHIATO_RED = [
 
     public function register(Panel $panel): void
     {
-        $flavor = config('catppuccin-theme.flavor', 'mocha');
+        $flavor = config('Catppuccin-Theme.flavor', 'mocha');
         $colors = $this->getFlavorColors($flavor);
 
         $panel
@@ -572,7 +572,7 @@ public const CATPPUCCIN_MACCHIATO_RED = [
                     'ocean' => '🌊 Ocean Depths',
                     'teal' => '🧊 Teal Mist',
                 ])
-                ->default(fn () => config('catppuccin-theme.flavor')),
+                ->default(fn () => config('Catppuccin-Theme.flavor')),
         ];
     }
 
